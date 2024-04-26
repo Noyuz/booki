@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
+/* GENERAL */
+
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 3.5%;
+}
+
+h2, h3, h4, p, a {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  object-fit: cover;
+}
+
+i {
+  color: #0065FC
+}
+
+/* HEADER */
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  height: 20px;
+}
+
+nav {
+  display: flex;
+  width: 25%;
+  height: 100%;
+}
+
+nav a {
+  width: 50%;
+  display: flex;
+  border-top: 2px solid transparent;
+}
+
+nav a:hover {
+  color: #0065FC;
+  border-color: #0065FC;
+}
+
+nav p {
+  margin: auto;
+}
+
+/* INFOS */
+
+form {
+  display: flex;
+  margin: 1.5rem 0;
+}
+
+form div:first-child {
+  display: flex;
+  width: 50px;
+  background-color: #F2F2F2;
+  border-radius: 12px 0 0 12px;
+}
+
+form i {
+  margin: auto;
+}
+
+form input {
+  font-size: 1em;
+}
+
+form [type="submit"] {
+  background-color: #0065FC;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  padding: 1em;
+  border: none;
+  border-radius: 0 12px 12px 0;
+}
+
+form input[type="text"] {
+  box-sizing: border-box;
+  font-weight: bold;
+  padding-left: 1em;
+  border: 1px solid #F2F2F2;
+}
+
+form button {
+  display: none;
+}
+
+.filters {
+  margin-bottom: 2rem;
+}
+
+.filters h4 {
+  display: inline-block;
+}
+
+.filters button {
+  margin: 0 1%;
+  padding: 0.8em 2%;
+  background-color: white;
+  border: 1.5px solid #D2D2D2;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.filters button:hover {
+  background-color: #DEEBFF;
+  cursor: pointer;
+}
+
+.filters i {
+  padding-right: 0.5em;
+}
+
+.fa-info {
+border: 1.5px solid #D2D2D2;
+padding: 6px 10px;
+border-radius: 50%;
+font-size: 14px;
+margin-right: 1rem;
+}
+
+/* HEBERGEMENTS */
+
+.stars {
+  display: flex;
+}
+
+#hebergements {
+  display: flex;
+  margin: 3rem 0 4rem 0;
+}
+
+#hebergements section {
+  width: 63%;
+  margin-right: 3%;
+}
+
+#hebergements section .stars {
+  margin-bottom: 0.5rem;
+}
+
+#hebergements aside {
+  width: 26%;
+}
+
+#hebergements section, #hebergements aside {
+  background-color: #F2F2F2;
+  border-radius: 12px;
+  padding: 2%;
+}
+
+#hebergements h4 {
+  margin-bottom: 1.5rem;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 2em;
+  margin: 1.5em 0 2.5em 0;
+}
+
+article {
+  background-color: white;
+  padding: 4px;
+  border-radius: 16px;
+  width: 30%;
+}
+
+article img {
+  width: 100%;
+  height: 125px;
+  border-radius: 16px 16px 0 0;
+}
+
+article h3 {
+  margin-top: 0.5rem;
+}
+
+.article-text {
+  padding-left: 0.5rem;
+}
+
+.article-text p {
+  margin: 0.5rem 0;
+}
+
+#hebergements aside img {
+  width: 40%;
+  height: 100%;
+  border-radius: 16px 0 0 16px;
+}
+
+.aside-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.aside-card {
+  display: flex;
+  height: 150px;
+  padding: 0.25em;
+  border-radius: 16px;
+  background-color: white;
+}
+
+.aside-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aside-top i {
+  font-size: 1.5em;
+}
+
+.aside-card-infos {
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.aside-card-text h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* ACTIVITIES */
+#activities {
+  margin-bottom: 3rem;
+}
+
+#activities img {
+  border-radius: 16px 16px 0 0;
+  height: 390px;
+  width: 100%;
+}
+
+.activities-cards {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.activities-cards div {
+  width: 23%;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.activities-cards h3 {
+  padding: 1.25em;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F2F2F2;
+  padding: 3.5em 18em 3.5em 4em;
+}
+
+footer h4 {
+  margin-bottom: 1.5rem;
+}
+
+footer p {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+
+  nav {
+    width: 50%;
+  }
+
+  #hebergements aside, #hebergements section {
+    width: 93%;
+    padding: 3.5%;
+  }
+
+  #hebergements section {
+    margin: 0 0 2rem 0;
+  }
+
+  #hebergements {
+    flex-direction: column;
+  }
+
+  .aside-cards {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .aside-card {
+    width: 30%;
+  }
+
+  #hebergements aside img {
+    width: 35%;
+  }
+
+  .aside-top {
+    margin: 1em 0 2em 0;
+  }
+
+  #activities img {
+    height: 210px;
+  }
+
+  footer {
+    padding-right: 9em;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  header {
+    margin: 1rem 0 2rem 0;
+    height: auto;
+    display: block;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 1rem;
+    width: auto;
+    height: 90px;
+  }
+
+  nav a {
+    border-top: none;
+    border-bottom: 3px solid #F2F2F2;
+  }
+
+  nav a:hover {
+    border-color: #0065FC
+  }
+
+  form input[type="text"] {
+    width: 100%;
+  }
+
+  form input[type="submit"] {
+    display: none;
+  }
+
+  form button {
+    display: block;
+  }
+
+  form button[type="submit"] i {
+    color: white;
+    font-size: 16px;
+  }
+
+  .infos {
+    margin: 1rem;
+  }
+
+  .filters h4 {
+    display: block;
+  }
+
+  .filters button {
+    width: 180px;
+    margin: 1rem 0;
+    font-size: 14px;
+    text-align: left;
+    padding: 16px 12px;
+  }
+
+  .filters i {
+    padding-right: 0.25rem;
+    font-size: 16px;
+  }
+
+  .infos p:last-child {
+    display: flex;
+    align-items: center;
+  }
+
+  #hebergements {
+    flex-direction: column-reverse;
+    margin: 3rem 0 0 0;
+  }
+
+  .aside-cards {
+    display: block;
+  }
+
+  .aside-card {
+    width: auto;
+    margin-bottom: 1rem;
+  }
+
+  #hebergements section {
+    background-color: white;
+    margin: 0;
+  }
+
+  #hebergements aside {
+    border-radius: 0;
+    padding-bottom: 2em;
+  }
+
+  #hebergements h4 {
+    display: none;
+  }
+
+  #hebergements aside img {
+    width: 140px;
+  }
+
+  article {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+
+  article, article img {
+    width: 100%;
+  }
+
+  #activities {
+    padding: 3.5%;
+  }
+
+  .activities-cards {
+    display: block;
+  }
+
+  .activities-cards div {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  footer {
+    padding: 3em 5%;
+    display: block;
+  }
+
+  footer div {
+    margin-bottom: 3rem;
+  }
+}
